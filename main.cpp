@@ -50,6 +50,10 @@ int main()
     cout << "\n - Lista Desordenada - " << endl;
     loe.imprime();
 
+    loe.quick_sort(loe.valores, 0, loe.tamanho);
+
+    loe.imprime();
+
     /*
     cout << "\n -> Escolha a opcao desejada :" << endl ;
     cout << "\n 1. Mostrar o estado da lista a cada iteracao do algoritmo!" << endl ;
