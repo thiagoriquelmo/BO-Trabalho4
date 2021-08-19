@@ -50,11 +50,7 @@ int main()
     cout << "\n - Lista Desordenada - " << endl;
     loe.imprime();
 
-    loe.quick_sort(loe.valores, 0, loe.tamanho);
-
-    loe.imprime();
-
-    /*
+    
     cout << "\n -> Escolha a opcao desejada :" << endl ;
     cout << "\n 1. Mostrar o estado da lista a cada iteracao do algoritmo!" << endl ;
     cout << "\n 2. Mostrar o numero de acessos a estrutura de dados!" << endl ;
@@ -63,10 +59,10 @@ int main()
     //ordena a lista
     cout << "\n - Ordenando a lista - " << endl ;
     if(escolha==1){
-        loe.InsertionSort(true, false);
+        loe.quick_sort(loe.valores, 0, loe.tamanho-1,false,true);
     }
     else if(escolha==2){
-        loe.InsertionSort(false, true);
+        loe.quick_sort(loe.valores, 0, loe.tamanho-1,true,false);
     }
     else{
         cout << "\n A OPCAO DIGITADA NAO EXISTE! " << endl ;
@@ -92,9 +88,9 @@ int main()
         }
 
         cout << "\n Lista com "<< j << " elementos:"<< endl ;
-        aleatoria.InsertionSort(false, true);
+        aleatoria.quick_sort(aleatoria.valores, 0, aleatoria.tamanho-1,true,false);
         
     }
-*/
+
     return 0;
 }
